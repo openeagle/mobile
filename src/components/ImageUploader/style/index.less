@@ -1,0 +1,48 @@
+.openeagle-image-uploader {
+  .van-uploader__wrapper {
+    margin: 0 calc(var(--gutter-horizontal) * -1);
+  }
+  .van-uploader__input-wrapper {
+    margin: 0 0 calc(var(--gutter-vertical) * 1) var(--gutter-horizontal);
+  }
+  .van-uploader__preview {
+    margin: 0 var(--gutter-horizontal) calc(var(--gutter-vertical) * 1);
+  }
+  .van-image.van-uploader__preview-image {
+    border-radius: 8px;
+    background-color: #f5f9fc;
+  }
+  &-addition {
+    &__btn {
+      width: 210px;
+      height: 210px;
+      border: 1px dashed #bbbbbd;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__icon {
+      margin-bottom: 10px;
+      width: 56px;
+      height: 56px;
+    }
+    &__text {
+      color: @text-color-regular;
+    }
+    &__tip {
+      color: @text-color-secondary;
+    }
+    &__delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

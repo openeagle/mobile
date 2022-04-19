@@ -1,0 +1,21 @@
+.zt-loader {
+  // TODO: 移动到全局
+  --zt-loader-padding-top: 100px;
+  --zt-loader-padding-bottom: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__content {
+    padding-top: var(--zt-loader-padding-top);
+    padding-bottom: var(--zt-loader-padding-bottom);
+  }
+
+  &__loading {
+    --padding-xs: 15px;
+
+    padding-top: 125px;
+  }
+}
